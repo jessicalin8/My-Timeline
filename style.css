@@ -10,7 +10,7 @@ header::after {
 
 .logo {
    float: left;
-   padding: 10px 0;
+   padding: 10px 20px;
 }
 
 nav {
@@ -82,13 +82,14 @@ h4 {
 
 .timeline{
    margin: 0 auto;
-   max-width: 750px;
+   max-width: 1200px;
    padding: 50px;
    display: grid;
    grid-template-columns: 1fr 3px 1fr;
    font-family: 'Montserrat';
    color: black;
 }
+
 
 .timeline__component{
    margin: 0 20px 20px 20px;
