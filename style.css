@@ -1,10 +1,11 @@
+/* Navbar */
 header {
    background: aliceblue;
    position: sticky;
    left: 0;
    top: 0;
-   width: 100%;
-   padding: 10px;
+   right: 0;
+   padding: 5px;
 }
 
 header::after {
@@ -18,6 +19,7 @@ header::after {
    padding: 10px 20px;
 }
 
+/* Navigation list */
 nav {
    float: right;
 }
@@ -30,8 +32,8 @@ nav ul {
 
 nav li {
    display: inline-block;
-   margin-left: 20px;
-   margin-right: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
    padding: 20px;
 }
 
@@ -90,6 +92,8 @@ h4 {
    font-size: small;
 }
 
+/* Timeline parts */
+
 .timeline{
    margin: 0 auto;
    max-width: 1200px;
@@ -142,4 +146,30 @@ h4 {
 
 .timeline__paragraph{
    line-height: 1.5;
+}
+
+
+.about{
+   display: flex;
+   width: 100%;
+}
+
+.about__text{
+   flex: 1;
+   color: white;
+   background: black;
+   width: 50%;
+   line-height: 1.5;
+   padding: 40px;
+}
+
+.about__title{
+   text-align: center;
+}
+
+.about__image{
+   flex: 1;
+   color:#E77340;
+   background: #052049;
+   width: 100%;
 }
