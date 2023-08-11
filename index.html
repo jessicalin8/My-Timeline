@@ -5,6 +5,8 @@
      <title>Welcome to Jess' Timeline!</title>
      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
      <link rel="stylesheet" type="text/css" href="style.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 
 <!--Navigation Bar-->
@@ -13,36 +15,33 @@
     <img src="timeline_images/logo_transparent.png" class="logo" width="35" height="35">
     <nav>
       <ul>
-        <li><a href="#top">Recent</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a onclick="toTop()">Most Recent</a></li>
+        <li><a onclick="toAbout()">About</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-
 <body>
   <script src="script.js"></script>
   <!--Title of Home Page-->
   <h1>My Timeline!</h1>
-  <h4>A non-comprehensive collection of my moments, memories, and other thoughts.</h4>
-  
+  <div id="subtitle">A non-comprehensive collection of my moments, memories, and other thoughts.
+  </div>
+
   <!--CREATE TIMELINE-->
   <div class="timeline">
 
-  <!--RIGHT TIMELINE BOX-->
-  <!--Timeline Component-->
+  <!--RIGHT TIMELINE BOX
   <div class="timeline__component">
     <img src="">
     </div>
-        
-  <!--Point on the Timeline-->
+    
   <div class="timeline__middle">
     <div class="timeline__point">
       </div>
   </div>
         
-  <!--Event Box-->
   <div class="timeline__component timeline__component--bg">
     <h2 class="timeline__title">TITLE</h2>
     <h3 class="timeline__date">DATE</h3>
@@ -50,9 +49,9 @@
       TEXT
     </p>
   </div>
+  -->
 
-  <!--LEFT TIMELINE BOX-->
-  <!--Event Box-->
+  <!--LEFT TIMELINE BOX
   <div class="timeline__component timeline__component--bg">
     <h2 class="timeline__title">TITLE</h2>
     <h3 class="timeline__date">DATE</h3>
@@ -60,22 +59,20 @@
       TEXT
     </p>
   </div>
-          
-  <!--Point on the Timeline-->
+      
   <div class="timeline__middle">
     <div class="timeline__point"></div>
   </div>
        
-  <!--Timeline Component-->
   <div class="timeline__component">
     <img src="">
     </div>
-
+  -->
 
 <!--LEDA Reunion (Right)-->
   <!--Timeline Component-->
   <div class="timeline__component">
-    <img src="">
+    <img src="timeline_images/iqra_rose.JPG" width="100%">
     </div>
         
   <!--Point on the Timeline-->
@@ -87,7 +84,7 @@
   <!--Event Box-->
   <div class="timeline__component timeline__component--bg">
     <h2 class="timeline__title">Reunion with Old Friends</h2>
-    <h3 class="timeline__date">August 7, 20203</h3>
+    <h3 class="timeline__date">August 7, 2023</h3>
     <p class="timeline__paragraph">
       Iqra and Rose met me at Penn Station before my train. I haven't seen Iqra, my summer roommate, in 5 years. And, the last time I saw Rose was freshmen fall when she visited Philly for the Lauv concert. I missed them so much. It's funny how you can go years without seeing someone but when you do everything feels the same. I felt like we were 17 again, laughing and just enjoying each other's company. Seeing them makes me excited and hopeful for the future. Iqra will be in DC working and starting her MPH program. Then, she will move to NYC to finish that Master's degree. Rose will be working in Chicago for the year - another reason for me to visit! I can't believe my friends are all growing up and starting their first big girl jobs. I know it also means that I am growing up too. In a year, I'll be starting my first full-time job as well. I'm excited for that. I want to take this next year to travel and visit my friends in different cities.
     </p>
@@ -169,7 +166,7 @@
         
   <!--Event Box-->
   <div class="timeline__component timeline__component--bg">
-    <h2 class="timeline__title">DAY in NYC</h2>
+    <h2 class="timeline__title">Day in NYC</h2>
     <h3 class="timeline__date">July, 15, 2023</h3>
     <p class="timeline__paragraph">
       Met up with Louise, Ani, and Vanessa in the city. Louise and I got brunch with her sister Lucy and Roxanne at an Italian place. We chatted about how we are all in our final year of our Master program. It's comforting to know that we are all going through similar things and Louise and I are both studying product design. It's sometimes weird to think that I am now older than Louise was when we first met. I met her in my freshmen year right before the pandemic through our undergrad Architecture group where she became my mentor. Afterwards, I met up with Ani and we got to catch up near NOHO. We spent the day window shopping and got ice cream from Morganstern Bananas. It was delicious especially on one of the hottest days. I learned that Ani and I have similar things that catch our eye in terms of style and asthetics. I felt so relaxed not having an agenda and just going wherever. After Ani left to catch her train, I visited Vanessa's new apartment! She showed me the vlog recap of senior year she was working on before we went to the Thai restaurant by her place. We had a great conversation about what we want to do in our careers and how we want to build in being creative into those role. It made us excited about the future. I feel so priviledged to have friends from the very beginning of my college experience. I met Vanessa the first week of college on a tour that the school organized to visit Chinatown. We found out we both lived in the same dorm and got involved in the theatre on campus.
@@ -210,7 +207,7 @@
       
   <!--Event Box-->
   <div class="timeline__component timeline__component--bg">
-    <h2 class="timeline__title">HBS</h2>
+    <h2 class="timeline__title">SVMP</h2>
     <h3 class="timeline__date">June 12-17, 2023</h3>
     <p class="timeline__paragraph">
       Spent the week learning about what it's like to be an MBA student at HBS. Met a lot of awesome people and had 11 case method classes in topics including entertainment, non-profit, operations, finance, and social media. The week was definitely a lot of hard work, but really what I remember was having a lot of fun and growing. I feel like I got to better understand what I want out of a future career and how an MBA can fit into that vision.
@@ -220,7 +217,7 @@
 <!--BIRTHDAY (Left)-->
   <!--Event Box-->
   <div class="timeline__component timeline__component--bg">
-    <h2 class="timeline__title">BIRTHDAY</h2>
+    <h2 class="timeline__title">22nd Birthday</h2>
     <h3 class="timeline__date">May 19, 2023</h3>
     <p class="timeline__paragraph">
       Turned 22 and got to celebrate with my family! Spent most of the day sick and with a headache, but it was nice being home after I was abroad for my birthday last year. Mom got me an ice cream cake from Carvel which was very nostalgic. I can't remember the last birthday I had an ice cream cake.
@@ -251,7 +248,7 @@
     
   <!--Event Box-->
   <div class="timeline__component timeline__component--bg">
-    <h2 class="timeline__title">GRADUATION</h2>
+    <h2 class="timeline__title">Graduation</h2>
     <h3 class="timeline__date">May 15, 2023</h3>
     <p class="timeline__paragraph">
       I graduated Summa Cum Laude from the University of Pennsylvania with a Bachelor of Arts in Architecture.
@@ -259,6 +256,8 @@
   </div>
 
   </div>
+
+  <button onclick="toTop()">Back to Top</button>
 
   <!--SECTION FOR ABOUT-->
   <a id="about">

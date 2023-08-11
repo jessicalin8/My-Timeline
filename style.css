@@ -1,7 +1,7 @@
 /* Navbar */
 header {
    background: aliceblue;
-   position: sticky;
+   position: fixed;
    left: 0;
    top: 0;
    right: 0;
@@ -41,10 +41,10 @@ nav a {
    color: #333333;
    text-decoration: none;
    text-transform: uppercase;
-   font-size: 15px;
+   font-size: 1em;
 }
 
-nav a:hover{
+nav a:hover {
    color: #E77340;
 }
 
@@ -52,6 +52,7 @@ nav a:hover{
    position: fixed;
    box-shadow: #333333;
 }
+
 
 body {
    margin: 0;
@@ -64,8 +65,9 @@ h1 {
    text-align: center;
    margin-left: auto;
    margin-right: auto;
-   width: 600px;
+   width: auto;
    height: 10px;
+   margin-top: 100px;
    padding: 20px;
    font-weight: bolder;
 }
@@ -81,7 +83,7 @@ h3 {
    font-size: small;
 }
 
-h4 {
+#subtitle {
    position: relative;
    color: #E77340;
    text-align: center;
@@ -89,14 +91,16 @@ h4 {
    margin-right: auto;
    font-weight: lighter;
    font-style: italic;
-   font-size: small;
+   font-size: medium;
 }
+
+
 
 /* Timeline parts */
 
-.timeline{
+.timeline {
    margin: 0 auto;
-   max-width: 1200px;
+   max-width: 80%;
    padding: 50px;
    display: grid;
    grid-template-columns: 1fr 3px 1fr;
@@ -106,28 +110,28 @@ h4 {
 }
 
 
-.timeline__component{
+.timeline__component {
    margin: 20px 20px 20px 20px;
 }
 
-.timeline__component--bg{
+.timeline__component--bg {
    padding: 1.5em;
    background: rgba(255, 255, 255, 0.2);
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
    border-radius: 10px;
 }
 
-.timeline__date{
+.timeline__date {
    text-align: left;
 }
 
 
-.timeline__middle{
+.timeline__middle {
    position: relative;
    background: white;
 }
 
-.timeline__point{
+.timeline__point {
    position: absolute;
    top: 40%;
    right: 50%;
@@ -138,38 +142,72 @@ h4 {
    border-radius: 50%;
 }
 
-.timeline__title{
+.timeline__title {
    margin: 0;
    font-size: 1.15em;
    font-weight: bold;
 }
 
-.timeline__paragraph{
+.timeline__paragraph {
    line-height: 1.5;
 }
 
+button {
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   padding: 15px;
+   display: flex;
+   width: 120px;
+   height: 20px;
+   margin-bottom: 50px;
+   font-family: 'Montserrat';
+   font-size: .7em;
+}
 
-.about{
+
+.about {
    display: flex;
    width: 100%;
 }
 
-.about__text{
+.about__text {
    flex: 1;
    color: white;
    background: black;
-   width: 50%;
-   line-height: 1.5;
-   padding: 40px;
+   width: 50;
+   line-height: 2em;
+   padding: 50px;
 }
 
-.about__title{
+.about__title {
    text-align: center;
 }
 
-.about__image{
+.about__image {
    flex: 1;
    color:#E77340;
-   background: #052049;
+   background: black;
    width: 100%;
+}
+
+@media (max-width: 600px) {
+   .about{
+      display: block;
+   }
+   
+   .about__text{
+      width: 100;
+   }
+
+   nav li{
+      display:flex;
+      padding: 5px;
+      justify-content: flex-end;
+   }
+
+   nav a{
+      font-size: .8em;
+   }
+
 }
